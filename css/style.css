@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+.slider__slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.slide_1 {
+    background: #f9e0c2;
+}
+
+.slide_2 {
+    background: #eeede2;
+}
+
+.slide_3 {
+    background: #c2e8f9;
+}
+
+.slide_4 {
+    background: #f9f4c2;
+}
+
+.slide_5 {
+    background: #ffc497;
+}
+
+.slide_active {
+    opacity: 1;
+}
+
+.steampunk {
+    width: calc(100% / 2);
+    padding: 10px 15px;
+}
+
+.steampunk__photo {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.steampunk__text {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.nav__button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    margin: 25px 5px;
+    transition: .3s;
+}
+
+.nav__button:hover {
+    cursor: pointer;
+}
+
+.nav__activ {
+    background-color: orange;
+}
+
+.nav__activ:hover {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.slider__manage {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-btn {
+    padding: 10px;
+}
+
+
